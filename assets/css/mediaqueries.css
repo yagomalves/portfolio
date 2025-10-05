@@ -1,93 +1,115 @@
-@media screen and (max-width: 1400px) {
-    #hero{
-        height: 83vh;
-        margin-bottom: 6rem ;
-    }
-    .about-containers {
-        flex-wrap: wrap;
-    }
-}
-
+/* Para telas médias (Laptops e Tablets maiores) */
 @media screen and (max-width: 1200px) {
+    /* Navegação */
     #desktop-nav {
         display: none;
     }
     #hamburguer-nav {
         display: flex;
     }
-    .experience, .experience-details-container {
-        margin-top: 2rem;
-    }
-    #hero, .section-container {
-        display: block;
-    }
-    .arrow {
-        display: none;
-    }
-    section, 
-    .section-container {
-        height: fit-content;
-    }
-    section {
-        margin: 0 5%;
-    }
-    .section__pic-container {
-        width: 275px;
-        height: 275px;
-        margin: 0 auto 2rem;
-    }
-    
-}
 
-@media screen and (max-width: 600px) {
-    #contact, footer {
-        height: 40vh;
-    }
-    #hero {
-        height: 83vh;
-        margin-bottom: 0;
-    }
-    article {
-        font-size: 1rem;
-    }
-    footer nav{
-        height: fit-content;
-        margin-bottom: 2rem;
-    }
-    .about-containers, 
-    .contact-info-upper-container, 
-    .btn-container {
-        flex-wrap: wrap;
-    }
-    .contact-info-container {
-        margin: 0;
-    }
-    .contact-info-container p, .nav-links li a {
-        font-size: 1rem;
-    }
-    .experience-sub-title {
-        font-size: 1.25rem;
-    }
-    .logo {
-        font-size: 1.5rem;
-    }
-    .nav-links {
+    /* Layout Principal: Muda para coluna */
+    #hero, 
+    .about-container {
         flex-direction: column;
-        gap: 0.5rem;
         text-align: center;
     }
-    .section-pic {
-        width: auto;
-        height: 46vw;
+
+    /* Margem e Padding */
+    section {
+        margin: 0 5%;
+        padding-top: 5vh;
+    }
+
+    /* Seção Hero e Sobre */
+    #hero {
+        gap: 2rem;
+        min-height: fit-content;
+        padding-top: 5vh;
+    }
+
+    .profile-pic-container,
+    .about-pic-container {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 1.5rem;
+    }
+    
+    .about-container {
+        gap: 2rem;
+    }
+}
+
+/* Para telas pequenas (Celulares e Tablets menores) */
+@media screen and (max-width: 768px) {
+    /* Tipografia */
+    .title {
+        font-size: 2.5rem;
+    }
+    .experience-sub-title {
+        font-size: 1.5rem;
+    }
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    /* Botões */
+    .btn-cont,
+    .contact-info-upper-container {
+        flex-wrap: wrap;
         justify-content: center;
     }
-    .section__text__p2 {
-        font-size: 1.25rem;
+    
+    /* Seção Sobre */
+    .about-containers {
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
     }
+    
+    .details-card {
+        flex-basis: 48%; /* Permite 2 por linha */
+    }
+
+    /* Seção Experiência */
+    .experience-containers {
+        flex-direction: column; /* Coloca Front-end e Back-end em colunas */
+        gap: 1.5rem;
+    }
+    
+    /* Seção Contato */
+    #contact {
+        min-height: 40vh;
+    }
+
+    .contact-info-container {
+        margin: 0.5rem;
+    }
+}
+
+/* Para telas muito pequenas (Celulares) */
+@media screen and (max-width: 480px) {
+    /* Geral */
+    section {
+        margin: 0 2%;
+    }
+    
     .title {
         font-size: 2rem;
     }
-    .text-container {
-        text-align: justify;
+    
+    /* Botões: 1 por linha para melhor toque */
+    .btn-cont {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .btn {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* Seção Sobre: 1 cartão por linha */
+    .details-card {
+        flex-basis: 100%;
     }
 }

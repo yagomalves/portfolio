@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
+    <title>Yago Alves | Desenvolvedor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/mediaqueries.css" />
   </head>
@@ -13,12 +17,13 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
           <li><a href="#experience">Experiência</a></li>
+          <li><a href="#projects">Projetos</a></li>
           <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </nav>
+
     <nav id="hamburguer-nav">
       <div class="logo">Yago Alves</div>
       <div class="hamburguer-menu">
@@ -28,56 +33,53 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
         </div>
       </div>
     </nav>
 
-    <section id="hero">
-      <div class="section__pic-container yago-pic">
-        <img src="./assets/image/me2.jpeg" alt="Yago Alves profile picture" />
+    <section id="hero" class="section-padding">
+      <div class="section__pic-container profile-pic-container">
+        <img
+          src="./assets/image/me2.jpeg"
+          alt="Yago Alves profile picture"
+          class="profile-pic"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Olá, me chamo</p>
         <h1 class="title">Yago Alves</h1>
-        <p class="section__text__p2">e sou Desenvolvedor</p>
+        <p class="section__text__p2">Desenvolvedor Júnior | Full-Stack</p>
         <div class="btn-cont">
           <button
-            class="btn btn-color-2"
+            class="btn btn-primary"
             onclick="window.open('./assets/resume_PT.pdf')"
           >
-            Acessar Curriculum
+            Acessar Currículo
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-secondary" onclick="location.href='./#contact'">
             Informações para contato
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/image/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://linkedin.com/in/yagomalves/', '_blank')"
-          />
-
-          <img
-            src="./assets/image/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/yagomalves', '_blank')"
-          />
+          <a href="https://linkedin.com/in/yagomalves/" target="_blank">
+            <i class="fab fa-linkedin icon-social"></i>
+          </a>
+          <a href="https://github.com/yagomalves" target="_blank">
+            <i class="fab fa-github icon-social"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="section-padding">
       <p class="section__text__p1">Saiba Mais</p>
       <h1 class="title">Sobre Mim</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
+      <div class="section-container about-container">
+        <div class="section__pic-container about-pic-container">
           <img
             src="./assets/image/me.jpg"
             alt="Profile picture"
@@ -86,261 +88,225 @@
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/image/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+            <div class="details-card card">
+              <i class="fa-solid fa-medal icon-card"></i>
               <h3>Experiência</h3>
               <p>
-                1 Ano <br />
+                1 Ano+ <br />
                 Desenvolvimento de Sistemas
               </p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/image/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+            <div class="details-card card">
+              <i class="fa-solid fa-graduation-cap icon-card"></i>
               <h3>Formação</h3>
-              <p>UNINASSAU <br />Análise e Desenvolvimento de Sistemas</p>
+              <p>
+                UNINASSAU <br />
+                Análise e Desenvolvimento de Sistemas
+              </p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Sou Yago, desenvolvedor em início de carreira, com conhecimentos
-              em HTML, CSS, PHP, JavaScript e banco de dados. Estou em transição
-              da área de hotelaria para tecnologia, unindo experiência em
-              atendimento e organização com minha paixão por programação.
-              Fluente em inglês, estudo diretamente em documentações oficiais e
-              busco conquistar minha primeira oportunidade como desenvolvedor
-              júnior
+              Sou Yago, desenvolvedor em início de carreira, com
+              conhecimentos sólidos em HTML, CSS, PHP, JavaScript, React e
+              banco de dados. Estou em transição da área de hotelaria para
+              tecnologia, unindo experiência em atendimento e organização com
+              minha paixão por programação. Fluente em inglês, estudo
+              diretamente em documentações oficiais e busco conquistar minha
+              primeira oportunidade como desenvolvedor júnior.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <p class="section__text__p1">Atividades recentes</p>
-      <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/image/projeto01.png"
-                alt="project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Yasushi Landing Page
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/yagomalves/yasushi_temakeria', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://yasushiorientalgourmet.com.br', '_blank')"
-              >
-                Demonstração
-              </button>
-            </div>
-          </div>
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/image/print_01.png"
-                alt="project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Reviews - Laravel + Blade
-            </h2>
-            <div class="btn-container">
-                            <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/yagomalves/laravelling', '_blank')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-
-
-
-
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/image/projeto03.png"
-                alt="project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Space Invaders - JS GAME</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/yagomalves/space_invaders', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://space-invaders-wine.vercel.app/', '_blank')"
-              >
-                Demonstração
-              </button>
-            </div>
-          </div>
-
-          
-        </div>
-      </div>
-     
-    </section>
-
-    <section id="experience">
-      <p class="section__text__p1"></p>
+    <section id="experience" class="section-padding">
+      <p class="section__text__p1">Habilidades</p>
       <h1 class="title">Experiência</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
+        <div class="about-containers experience-containers">
+          <div class="details-container experience-card card">
             <h2 class="experience-sub-title">Desenvolvimento Front-End</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+            <div class="skills-grid">
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>HTML</h3>
                   <p>Avançado</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>CSS</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>SASS</h3>
                   <p>Iniciante</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>JavaScript</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
-            </div>
+              </div>
           </div>
-          <div class="details-container">
+          <div class="details-container experience-card card">
             <h2 class="experience-sub-title">Desenvolvimento Backend</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+            <div class="skills-grid">
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>PHP</h3>
                   <p>Avançado</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>MySQL</h3>
                   <p>Básico</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>Git</h3>
                   <p>Intermediário</p>
                 </div>
               </article>
-              <article>
-                <img
-                  src="./assets/image/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
+              <article class="skill-item">
+                <i class="fa-solid fa-check icon-skill"></i>
                 <div>
                   <h3>Laravel</h3>
                   <p>Básico</p>
                 </div>
               </article>
-            </div>
+              </div>
           </div>
         </div>
       </div>
-
     </section>
 
-    <section id="contact">
+    <section id="projects" class="section-padding">
+      <p class="section__text__p1">Atividades recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="projects-grid">
+        <div class="project-card card">
+          <div class="article-container">
+            <img
+              src="./assets/image/projeto01.png"
+              alt="Yasushi Landing Page"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Yasushi Landing Page</h2>
+          <p class="project-description">
+            Landing page desenvolvida para um restaurante, focada em design moderno e otimização para dispositivos móveis.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-secondary project-btn"
+              onclick="window.open('https://github.com/yagomalves/yasushi_temakeria', '_blank')"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </button>
+            <button
+              class="btn btn-primary project-btn"
+              onclick="window.open('https://yasushiorientalgourmet.com.br', '_blank')"
+            >
+              Demonstração
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card card">
+          <div class="article-container">
+            <img
+              src="./assets/image/print_01.png"
+              alt="Reviews - Laravel + Blade"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Reviews - Laravel + Blade</h2>
+          <p class="project-description">
+            Sistema de cadastro e gerenciamento de reviews e notas, usando o ecossistema PHP/Laravel.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Blade</span>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-secondary project-btn"
+              onclick="window.open('https://github.com/yagomalves/laravelling', '_blank')"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card card">
+          <div class="article-container">
+            <img
+              src="./assets/image/projeto03.png"
+              alt="Space Invaders - JS GAME"
+              class="project-img"
+            />
+          </div>
+          <h2 class="project-title">Space Invaders - JS GAME</h2>
+          <p class="project-description">
+            Recriação do clássico jogo Space Invaders, demonstrando lógica de programação e manipulação de DOM com JavaScript puro.
+          </p>
+          <div class="tech-stack">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-secondary project-btn"
+              onclick="window.open('https://github.com/yagomalves/space_invaders', '_blank')"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </button>
+            <button
+              class="btn btn-primary project-btn"
+              onclick="window.open('https://space-invaders-wine.vercel.app/', '_blank')"
+            >
+              Demonstração
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-padding">
       <p class="section__text__p1">Mande um 'Oi'</p>
       <h1 class="title">Meu Contato</h1>
-      <div class="contact-info-upper-container">
+      <div class="contact-info-upper-container card">
         <div class="contact-info-container">
-          <img
-            src="./assets/image/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <i class="fa-solid fa-envelope icon-contact"></i>
           <p>
-            <a href="mailto:yago.melo@souunit.com.br" target="_blank"
-              >exemplo@email.com</a
+            <a href="mailto:yago.melo@souunit.com.br"
+              >yago.melo@souunit.com.br</a
             >
           </p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/image/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <i class="fab fa-linkedin icon-contact"></i>
           <p>
             <a href="https://linkedin.com/in/yagomalves" target="_blank"
               >LinkedIn</a
@@ -355,13 +321,14 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
             <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
       </nav>
-      <p>Todos os direitos reservados &#169; 2025</p>
+      <p>Desenvolvido por Yago Alves</p>
+      <p>Todos os direitos reservados &copy; 2025</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
